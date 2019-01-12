@@ -1,0 +1,48 @@
+Notes:
+
+engineer model:
+
+Attributes:
+
+1. name:string
+2. image_url: string
+3. title: string
+4. bio: text
+5. vote: integer
+
+Controller actions
+
+index
+  get api
+  render index.html.erb
+
+[do we loop through the engineer object in the controller or in the html.erb]
+
+
+
+
+INSTRUCTIONS (edited):
+
+This programming problem is language agnostic. You can use whatever language or framework you'd like to in order to render the content and persist the voting information.
+
+Main Goal: Create a roster page for the team,
+            Which has voting functionality
+
+1. Render the attached layout, 
+        based on data found at this CORS enabled endpoint: https://api.myjson.com/bins/16roa3
+
+2. The results of the API must be dynamic.
+   (So for instance if we were to hire a new engineer, then the API would return an additional listing...)
+
+3. There is a voting widget on each listing
+
+
+The widget is functional, meaning:
+
+4. As a visitor to the site, when I vote for a team member, then the number of votes should be incremented, 
+  
+5. The voting widget should reflect that I voted
+
+6. Widget displays how many times each listing has been voted on by other visitors
+
+  [pntm: a visitor should not be able to vote multiple times for the same engineer]
