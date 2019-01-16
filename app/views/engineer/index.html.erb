@@ -1,4 +1,10 @@
-<h1>Engineer#index</h1>
+<head>
+</head>
+
+<div class="container-fluid">
+
+
+<h1>G2 Crowd Team Roster</h1>
 <p>Find me in app/views/engineer/index.html.erb</p>
 
  <ul>
@@ -9,11 +15,27 @@
   <li><%= e.title %></li>
 <br>
   <article><%= e.bio %></article>
-  <ul>Votes: <%= e.vote %></ul>
+  <ul>Votes: <span id=""><%= e.vote %></span></ul>
+  <!-- onclick="functionName(e.id)"-->
+
   <% end %>
 </ul>
 
+<!-- <button type="button" class="glyphicon glyphicon-thumbs-up"></button>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ -->
 
+</div>
 
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+  // function that onclick triggers 
+  //functionName(id) {
+    //axios call - 'api/vote'
+    // if call is successful, update the html to reflect the new vote count
+    // use innerHTML update the contents of the span with the correct id
+    //}
+</script>
 
 
