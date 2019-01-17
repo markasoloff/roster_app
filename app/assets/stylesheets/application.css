@@ -29,6 +29,16 @@
 
   body {padding:50px; background:#ededed;}
 
+  button {
+    padding: 20px;
+    background: transparent;
+    text-shadow: 1px 1px 1px #202020;
+    font-family: "Lato", sans-serif;
+    font-size: 18pt;
+    border: 1px solid lightblue;
+    color: lightblue;
+  }
+
   .vote-count {
     width:40px;
     height:35px;
